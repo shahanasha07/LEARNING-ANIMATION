@@ -1,0 +1,36 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main div{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+    
+}
+.loader-1{
+    animation: loader 1s linear 0.2s infinite ;
+}
+.loader-2{
+    animation: loader 1s linear 0.3s infinite ;
+}
+.loader-3{
+    animation: loader 1s linear 0.4s infinite ;
+}
+@keyframes loader{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
